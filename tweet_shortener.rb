@@ -26,3 +26,15 @@ def word_substituter (tweet)
     end
     tweet_array.join(" ")
 end
+def bulk_tweet_shortener(tweet)
+  tweet_array = tweet.split(" ")
+    tweet_array.each_with_index do |word, index|
+      dictionary.keys.each do |long_words|
+        if word == long_words
+          tweet_array[index] = dictionary[long_words]
+        end
+      end
+    end
+    phrase = tweet_array.join(" ")
+    puts phrase
+end 
