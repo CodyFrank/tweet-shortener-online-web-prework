@@ -17,7 +17,7 @@ def word_substituter (tweet)
     tweet_array.each_with_index do |word, index|
       dictionary.keys.each do |long_words|
         if word == long_words
-          array[index] = dictionary[long_words]
+          tweet_array[index] = dictionary[long_words]
         end
       end
     end
