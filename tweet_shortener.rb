@@ -33,7 +33,7 @@ def bulk_tweet_shortener(array)
           array[index] = dictionary[long_words]
         end
       end
-      phrase = array.join(" ")
-      puts phrase
     end
+    array.join(" ")
+    puts bulk_tweet_shortener
 end
