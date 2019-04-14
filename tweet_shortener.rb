@@ -13,9 +13,10 @@ def dictionary
 end
 
 def word_substituter (tweet)
-  long_words = dictionary.shorter_words.keys
   tweet_array = tweet.split(" ")
-    tweet_array.collect do |word|
-
+    tweet_array.each_with_index do |word, index|
+      dictionary.keys.each do |long_words|
+        binding.pry
+      end
     end
 end
