@@ -13,7 +13,7 @@ def dictionary
 end
 
 def word_substituter (tweet)
-  require "dictionary"
+  ref "dictionary"
   long_words = shorter_words.keys
   binding.pry
   tweet_array = tweet.split(" ")
