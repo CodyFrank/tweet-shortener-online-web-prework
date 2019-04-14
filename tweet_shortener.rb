@@ -32,7 +32,7 @@ def bulk_tweet_shortener(array)
         tweet_array.each_with_index do |word, index|
           dictionary.keys.each do |long_words|
         if word == long_words
-          dictionary[long_words] = word.downcase
+          word.downcase = dictionary[long_words]
         end
       end
     end
