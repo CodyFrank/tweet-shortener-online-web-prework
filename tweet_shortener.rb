@@ -12,8 +12,7 @@ def dictionary
   }
 end
 
-def word_substituter (tweet)
-  ref "dictionary"
+def word_substituter (tweet, dictionary)
   long_words = shorter_words.keys
   binding.pry
   tweet_array = tweet.split(" ")
