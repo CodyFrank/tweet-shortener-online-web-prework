@@ -40,3 +40,19 @@ def bulk_tweet_shortener(array)
     puts phrase
   end
 end
+
+def selective_tweet_shortener(array)
+  array.each_with_index do |tweet, index|
+    tweet_array = tweet.split(" ")
+      tweet_array.each_with_index do |word, index|
+        dictionary.keys.each do |long_words|
+      if word.downcase == long_words
+        tweet_array[index] = dictionary[long_words]
+      end
+    end
+  end
+  phrase = tweet_array.join(" ")
+  puts phrase
+  end
+  end
+end
