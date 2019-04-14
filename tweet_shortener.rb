@@ -12,8 +12,8 @@ def dictionary
   }
 end
 
-def word_substituter (tweet, dictionary)
-  long_words = shorter_words.keys
+def word_substituter (tweet)
+  long_words = dictionary.shorter_words.keys
   tweet_array = tweet.split(" ")
     tweet_array.collect do |word|
 
