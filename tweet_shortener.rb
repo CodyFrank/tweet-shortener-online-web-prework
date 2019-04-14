@@ -14,7 +14,6 @@ end
 
 def word_substituter (tweet, dictionary)
   long_words = shorter_words.keys
-  binding.pry
   tweet_array = tweet.split(" ")
     tweet_array.collect do |word|
 
