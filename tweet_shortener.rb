@@ -35,5 +35,5 @@ def bulk_tweet_shortener(array)
       end
     end
     array.join(" ")
-    puts bulk_tweet_shortener
+    puts bulk_tweet_shortener(array)
 end
